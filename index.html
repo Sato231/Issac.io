@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Segoe+UI&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #f2efe8 0%, #d6cdc3 100%);
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      background-color: #ffffffdd;
+      padding: 40px 30px;
+      border-radius: 16px;
+      border: 6px solid #d4af37; /* gold border */
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Seal_of_the_United_States_Department_of_Justice.svg/1024px-Seal_of_the_United_States_Department_of_Justice.svg.png');
+      background-size: 280px;
+      background-repeat: no-repeat;
+      opacity: 0.05;
+      width: 300px;
+      height: 300px;
+      z-index: 0;
+    }
+
+    img.logo {
+      width: 160px;
+      margin-bottom: 20px;
+      z-index: 2;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .recipient, .issue-date, .issuer-name, .footer-note {
+      position: relative;
+      z-index: 2;
+    }
+
+    .recipient {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      color: #34495e;
+    }
+
+    .issue-date {
+      font-size: 16px;
+      color: #7f8c8d;
+      margin-bottom: 30px;
+    }
+
+    .issuer-name {
+      font-size: 18px;
+      color: #2c3e50;
+      text-decoration: underline;
+      margin-top: 30px;
+      font-weight: 500;
+    }
+
+    img.signature {
+      width: 140px;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #95a5a6;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="Logo.jpg" alt="Organization Logo" class="logo">
+
+    <h1>This certificate is officially verified by<br><strong>The Law Is Not Your Emotions</strong></h1>
+
+    <div class="recipient">Recipient: <span style="color:#2980b9;">  Isaac L Gedeo Jr
+    </span></div>
+
+    <div class="issue-date">Issued on: July 6, 2025</div>
+
+    <div class="issuer-name">Prince Reeves Williams</div>
+
+    <img src="SIGN.png" alt="Signature of Prince Reeves Williams" class="signature">
+
+    <div class="footer-note">For questions, contact us at thelawisnotyouremotions@gmail.com</div>
+  </div>
+
+</body>
+</html>
